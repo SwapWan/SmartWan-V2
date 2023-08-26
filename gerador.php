@@ -111,13 +111,13 @@ require 'vendor/autoload.php';
         $mail->CharSet = 'UTF-8';
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'newsmartwan@gmail.com';
-        $mail->Password = 'ocebsyxiszgjrmxw';
+        $mail->Username = '';
+        $mail->Password = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
         $mail->isHTML(true);
 
-        $mail->setFrom('newsmartwan@gmail.com', 'SmartWan');
+        $mail->setFrom('', 'SmartWan');
         $mail->addAddress($email, $nome);
 
         $mail->Subject = 'NPS - Nova Campanha';
